@@ -89,7 +89,7 @@ while patrolID != 20:
         randomLoc = (random.randrange(minX, maxX), random.randrange(minY, maxY), random.randrange(minZ, maxZ))
         
         for loc in locations:
-            if is_within_radius(randomLoc,loc) and randomLoc not in generated_locations and randomLoc[2] == loc[2] and randomLoc[0] not in range(18500,25000) and randomLoc[2] not in range(13000,15000) and randomLoc[0] not in range(14700,16500) and randomLoc[2] not in range(19500,25000) and randomLoc[0] not in range(2300,5500) and randomLoc[2] not in range(13500,16000) and randomLoc[0] not in range(3000,11000) and randomLoc[2] not in range(1000,4000):
+            if is_within_radius(randomLoc,loc) and randomLoc not in generated_locations and randomLoc[0] not in range(18500,25000) and randomLoc[2] not in range(13000,15000) and randomLoc[0] not in range(14700,16500) and randomLoc[2] not in range(19500,25000) and randomLoc[0] not in range(2300,5500) and randomLoc[2] not in range(13500,16000) and randomLoc[0] not in range(3000,11000) and randomLoc[2] not in range(1000,4000):
                 if generatedPoints == pointsToGen - 1:
                     print("\t\"" + str(loc[0]) + " " + str(loc[1]) +  " " + str(loc[2]) + "\"")
                     generated_locations.add(randomLoc)
